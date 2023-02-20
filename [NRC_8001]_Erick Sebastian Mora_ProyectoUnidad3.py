@@ -149,10 +149,10 @@ def caminoCorto(grafo, inicio, fin):
     ruta.reverse()
     
     # Imprimir el resultado
-    print("La ruta más corta para llegar desde", inicio, "hasta", ruta[-1], "es:")
+    print("La ruta que sigue el Dron para llegar desde", inicio, "hasta", ruta[-1], "es:")
     #Cada ruta se imprime con una flecha para indicar que fue recorrida
     print(" -> ".join(ruta), end=" ")
-    print("y el costo de transporte de", costo)
+    print("y el costo de transporte es de", costo)
 
     while True:
         opcionSiNo = input("Desea Realizar otro envio? S = Si / N = No")
