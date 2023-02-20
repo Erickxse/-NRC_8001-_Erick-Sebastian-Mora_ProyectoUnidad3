@@ -4,7 +4,7 @@ import os
 def validarNumeros():
     """
     Es un procedimiento generico alternativo para realizar validacion de numeros enteros
-    los datos ingresados se leen como string (str) y si son numeros se verifican
+    del 0 al 20 los datos ingresados se leen como string (str) y si son numeros se verifican
     y se transforman en tipo de datos entero (int), en este variante de funcion
     se maneja el uso de una excepcion para el ingreso de datos que no son numericos:
     ------------
@@ -32,6 +32,18 @@ def salir():
     exit()
 
 def menuOpciones():
+        """
+        Es un procedimiento que imprime un menu de opciones de transporte y recibe por
+        teclado dos opciones que corresponderan al punto de partida y de entrega respectivamente
+        del dron, esta validado con la funcion validarNumeros() para recibir solo valores numericos
+        entre 0 y 20 y se fusiona con otra funcion que conecta al algoritmo de busqueda:
+        ------------
+            No Recibe parametros de entrada
+        
+        Retorna:
+        ------------
+            No retorna ningun valor
+        """
         print("---Bienvenido al Sistema de Mensajeria ESPE---")
         print("A continuacion se presentan las ubicaciones disponibles para la recoleccion y entrega de mensajeria:")
         print("")
@@ -67,6 +79,17 @@ def menuOpciones():
             seleccion(opcion1, opcion2)
 
 def seleccion(opcion1, opcion2):
+    """
+        Es un procedimiento que asocia el menu de opciones con el algoritmo de busqueda,
+        tomando los valores escritos en el menu y asociandolos en una lista con sus direcciones
+        colocadas de acuerdo a los indices del menu:
+        ------------
+            No Recibe parametros de entrada
+        
+        Retorna:
+        ------------
+            No retorna ningun valor
+    """
     grafo = grafoDef()
     ubicaciones = ["Entrada", "Biblioteca", "Ed_Administrativo", "Ed_Central", "Lab_Mecanica",  "Bloque_D", "Bloque_C", "Bloque_B", "Bloque_A", "Bar",
         "Zona_Deportiva", "Adufa", "Innovativa", "Centro_Investig", "Lab_Electronica", "Lab_Automatizacion", "Lab_Fluidos", "Lab_Biotec", "Laboratorios", "Coliseo"]
