@@ -1,3 +1,12 @@
+"""
+Descripción:
+Algoritmo de Buqueda Dron Repartidor
+PROYECTO UNIDAD 3 
+Autor:
+Erick Sebastian Mora 
+"""
+
+#Modulos no referenciales al algoritmo
 import time
 import os
 
